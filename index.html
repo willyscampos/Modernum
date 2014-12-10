@@ -85,15 +85,15 @@
                                     <div class="menu_box_list">
                                         <ul>
 
-                                            <li><a href="#/home" onclick="remove()"><i>
+                                            <li><a href="#/home" ng-click="Menuout()"><i>
                                                 <img src="images/home.png" alt="" /></i><span>Home</span>
                                             </a></li>
 
-                                            <li><a href="#/texto" onclick="remove()"><i>
+                                            <li><a href="#/texto" ng-click="Menuout()"><i>
                                                 <img src="images/portfolio.png" alt="" /></i><span>Textos</span>
                                             </a></li>
 
-                                            <li><a href="#/video" onclick="remove()"><i>
+                                            <li><a href="#/video" ng-click="Menuout()"><i>
                                                 <img src="images/portfolio.png" alt="" /></i><span>Vídeo</span></a></li>
 
                                             <li><a href="#/audio" onclick="remove()"><i>
@@ -136,7 +136,8 @@
                             });
                         });
 
-                        function remove() {                            
+                        function remove() {
+                            alert('xico');
                             $('#box').hide();
                         }
 

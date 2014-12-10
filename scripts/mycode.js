@@ -73,6 +73,12 @@ app.controller('MainController', function ($rootScope,$scope, analytics, $timeou
             $rootScope.usuario = 0;
             $rootScope.nome = "";
         }
+
+
+        $scope.Menuout = function () {
+            alert('xico');
+            $('#box').hide();
+        }
 });
 
 app.controller('MapCtrl', function ($scope, $http, $location, $timeout) {
