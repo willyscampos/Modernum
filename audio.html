@@ -1,8 +1,25 @@
 ﻿<div class="scrollable" ng-controller="audioController">
+    <h1 style="text-align:center">Áudio</h1>
 
-    <audio controls>
-        <source src="https://dl.dropboxusercontent.com/u/55446665/Modernum/identidadecultural.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <div class="scrollable">
+        <div class="scrollable-content container section">
+            <div class="panel-group" id="accordion">
+                <!--one-->
+
+                <div class="panel panel-default" ng-repeat="informacao in lista">
+                    <div class="panel-heading">
+                        <h4 class="panel-title" style="text-align:center">
+                            {{informacao.aud_titulo}}
+                            <audio controls>
+                                <source src="{{informacao.aud_descricao}}" type="audio/mpeg">                                
+                            </audio>
+                        </h4>
+                    </div>
+                </div>
+
+                <div style="padding: 100px;"></div>
+            </div>
+        </div>
+    </div>
 
 </div>

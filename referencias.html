@@ -1,5 +1,5 @@
-﻿<div class="scrollable" ng-controller="textoController">
-    <h1 style="text-align:center">Textos</h1>
+﻿<div class="scrollable" ng-controller="referenciasController">
+    <h1 style="text-align:center">Referências</h1>
 
     <div class="scrollable">
         <div class="scrollable-content container section">
@@ -8,12 +8,12 @@
                 <div class="panel panel-default" ng-repeat="informacao in lista">
                     <div class="panel-heading">
                         <h4 class="panel-title" style="text-align:center">
-                            <a href toggle target="collapse{{informacao.tex_id}}">{{informacao.tex_titulo}}</a>                            
+                            <a href toggle target="collapse{{informacao.ref_id}}">{{informacao.ref_titulo}}</a>                            
                         </h4>
                     </div>
-                    <div id="collapse{{informacao.tex_id}}" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
+                    <div id="collapse{{informacao.ref_id}}" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
                         <div class="panel-body" style="background-color: #f5f5f5; text-align:center">  
-                            <div ng-bind-html="informacao.tex_descricao"></div>
+                            <div ng-bind-html="informacao.ref_descricao"></div>
                         </div>
                     </div>
                 </div>

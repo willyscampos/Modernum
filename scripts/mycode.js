@@ -14,6 +14,8 @@ app.config(function ($routeProvider, $locationProvider) {
     $routeProvider.when('/texto', { templateUrl: "texto.html" });
     $routeProvider.when('/video', { templateUrl: "video.html" });
     $routeProvider.when('/audio', { templateUrl: "audio.html" });
+    $routeProvider.when('/referencias', { templateUrl: "referencias.html" });
+    $routeProvider.when('/equipe', { templateUrl: "equipe.html" });
     $routeProvider.when('/evidencias', { templateUrl: "evidencias.html" });
     $routeProvider.when('/fotos', { templateUrl: "fotos.html" });
 });
@@ -54,8 +56,8 @@ app.controller('MainController', function ($rootScope,$scope, analytics, $timeou
         $scope.lwidth = window.innerWidth;$scope.lheight = window.innerHeight;$scope.tsplash = true;$scope.tsplash2 = false;
         $scope.tvivo = false;
 
-        //$rootScope.servidor = 'http://hackingcode.com.br:907';
-        $rootScope.servidor = 'http://localhost:907';
+        $rootScope.servidor = 'http://hackingcode.com.br:8010';
+        //$rootScope.servidor = 'http://localhost:907';
         $rootScope.usuario = 0;
         $rootScope.nome = "";
         $rootScope.uuid = 'idxpt0';

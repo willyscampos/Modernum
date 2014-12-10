@@ -33,14 +33,16 @@
     <script src="mobile-angular-ui/js/mobile-angular-ui-touch-fastclick.min.js"></script>
     <script src="mobile-angular-ui/js/mobile-angular-ui-scrollable-overthrow.min.js"></script>
     <script src="angular-sanitize.js"></script>
-    
+
 
     <!--mycodes-->
     <script src="scripts/mycode.js"></script>
     <script src="controller/textoController.js"></script>
-    <script src="controller/videoController.js"></script>    
-    <script src="controller/audioController.js"></script>    
-
+    <script src="controller/videoController.js"></script>
+    <script src="controller/audioController.js"></script>
+    <script src="controller/referenciasController.js"></script>
+    <script src="controller/equipeController.js"></script>
+    
     <!--cordova and features-->
     <script src="ng-cordova.js" type="text/javascript" charset="utf-8"></script>
     <script src="cordova.js" type="text/javascript" charset="utf-8"></script>
@@ -70,29 +72,38 @@
             <div class="header_top" id="home">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="" /></a>
+                        <img src="client/logomodernum.png" alt="" /></a>
                 </div>
                 <div class="menu">
-                    <a href="#" class="right_bt" id="activator">
-                        <img src="images/nav.png" alt="" /></a>
+                    <p class="right_bt" id="activator">
+                        <img src="images/nav.png" alt="" />
+                    </p>
                     <div class="box" id="box">
                         <div class="box_content">
                             <div class="box_content_center">
                                 <div class="form_content">
                                     <div class="menu_box_list">
-                                        <ul>                                            
+                                        <ul>
+
+                                            <li><a href="#/home" onclick="remove()"><i>
+                                                <img src="images/home.png" alt="" /></i><span>Home</span>
+                                            </a></li>
+
                                             <li><a href="#/texto" onclick="remove()"><i>
-                                                <img src="images/home.png" alt="" /></i><span>Textos</span>
+                                                <img src="images/portfolio.png" alt="" /></i><span>Textos</span>
                                             </a></li>
 
                                             <li><a href="#/video" onclick="remove()"><i>
-                                                <img src="images/portfolio.png" alt="" /></i><span>Video</span></a></li>
-                                            
-                                            <li><a href="#/audio" onclick="remove()"><i>
-                                                <img src="images/about.png" alt="" /></i><span>Audio</span></a></li>                                            
+                                                <img src="images/portfolio.png" alt="" /></i><span>Vídeo</span></a></li>
 
-                                            <li><a href="#contact" class="scroll"><i>
-                                                <img src="images/contact.png" alt="" /></i><span>drop me a line</span></a></li>
+                                            <li><a href="#/audio" onclick="remove()"><i>
+                                                <img src="images/portfolio.png" alt="" /></i><span>Áudio</span></a></li>
+
+                                            <li><a href="#/referencias" onclick="remove()"><i>
+                                                <img src="images/portfolio.png" alt="" /></i><span>Referências</span></a></li>
+
+                                            <li><a href="#equipe" onclick="remove()"><i>
+                                                <img src="images/contact.png" alt="" /></i><span>Equipe</span></a></li>
                                         </ul>
                                     </div>
                                     <a class="boxclose" id="boxclose">
@@ -144,7 +155,7 @@
         </div>
     </div>
 
-<!--    <script src="js/classie.js"></script>
+    <!--    <script src="js/classie.js"></script>
     <script src="js/cbpScroller.js"></script>
     <script>
         new cbpScroller(document.getElementById('cbp-so-scroller'));

@@ -1,4 +1,4 @@
-﻿app.controller('audioController', function ($rootScope, $scope, $http) {
+﻿app.controller('referenciasController', function ($rootScope, $scope, $http) {
 
     // inicio do comportamento
     $scope.objresponse = [];
@@ -17,11 +17,11 @@
 
 
     //// funcoes e procedimentos
-    $http.post('' + $rootScope.servidor + '/GetAllAudio', $scope.Objeto).success(confirmaCallback);
+    $http.post('' + $rootScope.servidor + '/GetAllReferencias', $scope.Objeto).success(confirmaCallback);
 
     // callbacks
     function confirmaCallback(data, status) {
-        
+
         $scope.lista = data;
     }
 
