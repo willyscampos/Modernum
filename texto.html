@@ -1,0 +1,26 @@
+﻿<div class="scrollable" ng-controller="textoController">
+
+    <div class="scrollable">
+        <div class="scrollable-content container section">
+            <div class="panel-group" id="accordion">
+                <!--one-->
+
+                <div class="panel panel-default" ng-repeat="informacao in lista">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href toggle target="collapseOne">{{informacao.tex_titulo}}</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
+                        <div class="panel-body" style="background-color: #079fbf;">  
+                            <div ng-bind-html="informacao.tex_descricao"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="padding: 100px;"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
