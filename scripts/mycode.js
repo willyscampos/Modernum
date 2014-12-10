@@ -76,7 +76,7 @@ app.controller('MainController', function ($rootScope,$scope, analytics, $timeou
 
 
         $scope.Menuout = function () {
-            alert('xico');
+            
             $('#box').hide();
         }
 });

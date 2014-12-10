@@ -11,7 +11,7 @@
                         <h4 class="panel-title" style="text-align:center">
                             {{informacao.aud_titulo}}
                             <audio controls>
-                                <source src="{{informacao.aud_descricao}}" type="audio/mpeg">                                
+                                <p ng-bind-html="{{informacao.aud_descricao}}"></p>                                
                             </audio>
                         </h4>
                     </div>
