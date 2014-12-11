@@ -1,18 +1,19 @@
 ﻿<div class="scrollable" ng-controller="audioController">
-    <h1 style="text-align:center">Áudio</h1>
+    <h1 style="text-align: center">Áudio</h1>
 
     <div class="scrollable">
         <div class="scrollable-content container section">
             <div class="panel-group" id="accordion">
                 <!--one-->
 
+                <div style="padding: 0px">
+                    <div id="player"></div>
+                </div>
+                
                 <div class="panel panel-default" ng-repeat="informacao in lista">
                     <div class="panel-heading">
-                        <h4 class="panel-title" style="text-align:center">
-                            {{informacao.aud_titulo}}
-                            <audio controls>
-                                <source src={{informacao.aud_descricao}}></source>
-                            </audio>
+                        <h4 class="panel-title" style="text-align: center">                            
+                            <a ng-click="changevideo(informacao.aud_descricao)" toggle target="collapseOne">{{informacao.aud_titulo}}</a>                            
                         </h4>
                     </div>
                 </div>

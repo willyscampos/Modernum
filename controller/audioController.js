@@ -25,5 +25,14 @@
         $scope.lista = data;
     }
 
+    $scope.changevideo = function (codigo) {
+        $("#player").empty();
+        var ifr = $('<audio controls><source /></audio>');
+        var src = codigo;
+        ifr.addClass('player');
+        ifr.attr('src', src);
+        $("#player").append(ifr);        
+    }
+
 
 });
